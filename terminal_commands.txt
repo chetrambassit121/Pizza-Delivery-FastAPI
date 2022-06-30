@@ -1,0 +1,6 @@
+swagger api in autocreated when we are using fastapi
+
+
+
+
+uvicorn main:app --reload                   .......  starts the server localhost8000
