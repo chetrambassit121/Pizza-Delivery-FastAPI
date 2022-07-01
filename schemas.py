@@ -1,6 +1,6 @@
 from pydantic import BaseModel
 from typing import Optional
-
+from decouple import config 
 
 class SignUpModel(BaseModel):
     id:Optional[int]
@@ -24,4 +24,7 @@ class SignUpModel(BaseModel):
         }
 
 
+
+class Settings(BaseModel):
+    authjwt_secret_key:str=config('secret_key')
 
