@@ -26,7 +26,9 @@ class SignUpModel(BaseModel):
 
 
 class Settings(BaseModel):
-    authjwt_secret_key:str=config('secret_key')
+    # authjwt_secret_key:str=config('secret_key')
+    authjwt_secret_key:str="84c0aa5f40781532d46bf5a2018066298547c63e8920fa9d7db15658c95ca737"
+
 
 
 
