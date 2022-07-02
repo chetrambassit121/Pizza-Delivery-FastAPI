@@ -1,8 +1,8 @@
 from sqlalchemy import create_engine 
 from decouple import config
-import sqlalchemy
+
 from sqlalchemy.orm import declarative_base, sessionmaker
-import databases
+
 
 # engine=create_engine(config('DATABASE_CREDENTIALS'), echo=True)
 # engine=create_engine('postgresql://postgres:kitty121@localhost/Pizza-Delivery-FastAPI', echo=True)
