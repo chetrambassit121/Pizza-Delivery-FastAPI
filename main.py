@@ -60,6 +60,10 @@ def custom_openapi():
 
 app.openapi = custom_openapi
 
+@app.get('/')
+async def index():
+    return {"message":"hello chetram"}
+
 
 @AuthJWT.load_config
 def get_config():
